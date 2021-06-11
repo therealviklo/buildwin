@@ -1,0 +1,4 @@
+buildwin
+.vscode
+*.o
+*.obj

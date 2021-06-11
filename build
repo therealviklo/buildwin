@@ -1,0 +1,2 @@
+#!/bin/sh
+vmake -o buildwin clang++ -O2 -std=c++20 -Wall -Wextra
