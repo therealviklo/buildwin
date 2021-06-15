@@ -119,10 +119,10 @@ int main(int argc, char* argv[])
 	{
 		std::string inpname;
 		std::map<std::string, std::string> reps{
-			{"clang++", "x86_64-w64-mingw32-g++"},
-			{"clang", "x86_64-w64-mingw32-gcc"},
-			{"g++", "x86_64-w64-mingw32-g++"},
-			{"gcc", "x86_64-w64-mingw32-gcc"},
+			{"clang++", "wincc"},
+			{"clang", "wincc"},
+			{"g++", "wincc"},
+			{"gcc", "wincc"},
 			{"windres", "/usr/bin/x86_64-w64-mingw32-windres"},
 			{"-std=c++20", "-std=c++2a"}
 		};
