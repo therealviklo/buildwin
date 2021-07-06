@@ -175,7 +175,12 @@ int main(int argc, char* argv[])
 				inpname = argv[i];
 			}
 		}
-		if (inpname.empty()) dispHelp();
+
+		if (!std::filesystem::exists(std::filesystem::path(inpname)))
+		{
+			std::printf("Kunde inte hitta filen \"%s\"", inpname.c_str());
+			return 0;
+		}
 
 		std::vector<char> data;
 		{
