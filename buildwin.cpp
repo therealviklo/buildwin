@@ -117,7 +117,7 @@ int main(int argc, char* argv[])
 {
 	try
 	{
-		std::string inpname;
+		std::string inpname = "build.bat";
 		std::map<std::string, std::string> reps{
 			{"clang++", "wincc"},
 			{"clang", "wincc"},
@@ -128,7 +128,7 @@ int main(int argc, char* argv[])
 		};
 		auto dispHelp = []() -> void {
 			std::printf(
-				"Användning: buildwin [flaggor] fil [flaggor]\n"
+				"Användning: buildwin [flaggor] [fil] [flaggor]\n"
 				"Flaggor:\n"
 				"    -h            Visa hjälp\n"
 				"    -r FRÅN TILL  Byt ut FRÅN med TILL\n"
@@ -136,6 +136,7 @@ int main(int argc, char* argv[])
 				"    -p            Skriv ut vilka utbyten som\n"
 				"                  skulle ske med dessa flaggor\n"
 				"Kör \"buildwin -p\" för att se standardutbyten.\n"
+				"Defaultfilnamnet är \"build.bat\"."
 			);
 			std::exit(0);
 		};
