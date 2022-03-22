@@ -123,8 +123,7 @@ int main(int argc, char* argv[])
 			{"clang", "wincc"},
 			{"g++", "wincc"},
 			{"gcc", "wincc"},
-			{"windres", "/usr/bin/x86_64-w64-mingw32-windres"},
-			{"-std=c++20", "-std=c++2a"}
+			{"windres", "/usr/bin/x86_64-w64-mingw32-windres"}
 		};
 		auto dispHelp = []() -> void {
 			std::printf(
